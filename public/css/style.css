@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
   }
 
 /***************** Main *****************/
@@ -12,7 +13,6 @@
 
 #navbar {
     background: rgb(255, 255, 255);
-    position: fixed;
     top: 0;
     height: 60px;
     line-height: 60px;
@@ -22,40 +22,26 @@
   }
   
   #homeTitle {
-    float: left;
-    margin-left: 28px;
+    display: inline-flex;
+    justify-content: left;
+    margin-left: 20px;
     font-size: 1.5em;
     height: 60px;
     letter-spacing: 1px;
-  } @media(max-width: 768px) {
-
-    }
+  } 
   
   #navbar ul {
-    display: inline-block;
-    float: right;
+    margin-left: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
     list-style: none;
-    margin-top: -2px;
     text-align: right;
-    transition: transform 0.5s ease-out;
-    -webkit-transition: transform 0.5s ease-out;
-  } @media(max-width: 640px) {
-      #navbar ul {
-        display: none;
-      }
-    } @media(orientation: landscape) {
-        #navbar ul {
-          display: inline-block;
-        }
-      }
-  
-  #navbar li {
-    display: inline-block;
   }
   
   #navbar li a {
     color: rgb(0, 0, 0);
-    display: block;
     font-size: 0.9em;
     height: 50px;
     letter-spacing: 1px;
@@ -103,4 +89,17 @@
   #navbar li a:hover:after {
     background: transparent;
     width: 100%;
+  }
+
+  #openingSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 50px;
+
+    margin-left: 20px;
+    width: 100vw;
+    height: 300px;
   }
