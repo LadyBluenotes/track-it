@@ -6,28 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <title>The Daily Drill</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/dbb8627868.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <nav id="navbar">
-                <h1 id="homeTitle">The Daily Drill</h1>
-                <ul id="menu">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/login">Login</a>
-                    </li>
-                    <li>
-                        <a href="/signup">Sign Up</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg" style="background-color: #002e16;">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white fw-semibold fs-2" href="/">The Daily Drill</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03"></div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/signup">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
             </nav>
         </header>
         <main>
@@ -44,26 +47,32 @@
             </section>
             <section>
                 <h2>Features</h2>
-                <div>
-                    <ul>
-                        <li>
-                            <h3>Planner</h3>
-                            <p>Never miss a deadline or appointment again!</p>
-                        </li>
-                        <li>
-                            <h3>Task Managing</h3>
-                            <p>Keep track of the tasks you wish to accomplish within the day, week, month or year. Managing which tasks are of priority and which are not as urgent will help you increase your productivity level.</p>
-                        </li>
-                        <li>
-                            <h3>Journal</h3>
-                            <p>Write down the highlights of your day or where you feel you need to improve.</p>
-                        </li>
-                        <li>
-                            <h3>Tracking</h3>
-                            <p> See how your progress is towards reaching your goals and maintaining your habits.</p>
-                        </li>
-                    </ul>
-                </div>
+                <div class="row">
+                    <div class="col-4">
+                      <div class="card" style="width: 18rem; height: 10rem; margin: 2rem; padding: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Planner</h5>
+                          <p class="card-text">Never miss a deadline or appointment again!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card" style="width: 18rem; height: 10rem; margin: 2rem; padding: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Task Managing</h5>
+                          <p class="card-text">See how your progress is towards reaching your goals and maintaining your habits.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem; height: 10rem; margin: 2rem; padding: 5px;">
+                          <div class="card-body">
+                            <h5 class="card-title">Journal</h5>
+                            <p class="card-text">Write down the highlights of your day or where you feel you need to improve.</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
             </section>
             <section>
                 <h2>About Us</h2>
@@ -75,16 +84,17 @@
                 <button>Sign up</button>
             </section>
         </main>
-        <footer>
-            <img src="#" alt="logo">
-            <h3>The Daily Drill</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </footer>
+        <footer class="text-center text-white fixed-bottom" style="background-color: #002e16;">
+            <!-- Grid container -->
+            <div class="container p-4"></div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" href="/">The Daily Drill</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
     </body>
 </html>
