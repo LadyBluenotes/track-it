@@ -5,5 +5,9 @@ module.exports = {
 
     getAbout: (req,res) => {
         res.render('about.ejs')
+    },
+
+    getuser: (req,res) => {
+        res.render('userHome.ejs')
     }
 }
