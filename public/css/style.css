@@ -1,12 +1,53 @@
 /***************** Global *****************/
 
 * {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  white-space: normal;
+}
+
+html {
+  font-size: 62.5%;
+
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+.btn {
+  border: 2px solid var(--black);
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.formInput {
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 7px;
+  width: 300px;
+  font-size: 1.7rem;
+  padding: 10px;
+  margin: 8px;
+}
+
 
 /***************** Main *****************/
 
@@ -103,3 +144,112 @@
     width: 100vw;
     height: 300px;
   }
+
+/***************** Login *****************/
+
+.signInPhotoContainer {
+  float: left;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 58vw;
+  height: 100vh;
+  background-color: #000;
+  background-size: 100%;
+}
+
+.signInContainer {
+  text-align: center;
+  vertical-align: center;
+  height: 100vh;
+  width: 40vw;
+  display: inline-block;
+}
+
+.lockContainer {
+  padding: 5% 0;
+  margin: auto;
+}
+
+.signIn {
+  font-size: 2.5rem;
+}
+
+.submitInput {
+  font-size: 2rem;
+  border: 1px solid rgb(177, 177, 177);
+  color: white;
+  background-color: #204345;
+  padding: 5px;
+  margin: 5px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.email, .password {
+  background-color: #d6e8e985;
+  width: 320px;
+}
+
+.signInContainer {
+  padding-top: 10%;
+}
+
+.noAccountContainer h3 {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.lock {
+  padding: 15px;
+  background-color: #809192;
+  border-radius: 50%;
+}
+
+
+/***************** Sign Up *****************/
+
+.signUpContainer {
+  margin: 20vh auto;
+  padding: 15px;
+  height: 20%;
+  border: 1.5px solid #204345;
+  background-color: #e5eff0;
+  border-radius: 15px;
+  width: 350px;
+  height: 450px;
+}
+
+.signUpContainer .submitInput {
+  margin: 0 auto;
+}
+
+.signUpContainer h2 {
+  font-size: 2.9rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.signUpContainer .submitInput {
+  margin-left: 68%;
+}
+
+.signUpBody {
+  background-image: url(../image/books.jpg);
+  background-repeat: repeat;
+  background-position: center cover;
+}
+
+.goToLogin h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+
+a:link, a:visited {
+  color: #133031;
+  font-weight:600;
+}
+
+a:hover {
+  color: #3c6c6e;
+}

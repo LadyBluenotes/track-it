@@ -11,6 +11,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-
+        <main class="signUpContainer">
+            <h2>Sign Up Here!</h2>
+            <form action="/signup" method="POST">
+                <input class="formInput" type="text" name="userName" placeholder="User Name">
+                <input class="formInput" type="text" name="name" placeholder="Name">
+                <input class="formInput" type="email" name="email" placeholder="Email">
+                <input class="formInput" type="password" name="password" placeholder="Password">
+                <input class="formInput" type="password" name="confirmPassword" placeholder="Confirm Password">
+                <input class="submitInput" type="submit">
+            </form>
+            <div class="goToLogin">
+                <h4><a href="/login">I've Been Here Before</a></h4>
+            </div>
+        </main>
     </body>
 </html>

@@ -9,8 +9,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
-
+        <main>
+            <section class="signInPhotoContainer">
+            </section>
+            <section class="signInContainer">
+                <div class="lockContainer">
+                    <span class="material-symbols-outlined lock">lock</span>
+                    <h2 class="signIn">Log in</h2>
+                </div>
+                <div class="signFormContainer">
+                    <form action="/login" method="POST">
+                        <input class="formInput email" type="email" name="email" placeholder="Email">
+                        <input class="formInput password" type="password" name="password" placeholder="Password"><br>
+                        <input class="submitInput" type="submit" class="submitLogin">
+                    </form>
+                </div>
+                <div class="">
+                    <h3 class="sighUpText">No account? Sign up <a href="/signup">here</a>.</h3>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
