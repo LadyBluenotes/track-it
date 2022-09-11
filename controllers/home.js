@@ -1,6 +1,6 @@
 module.exports = {
     getIndex: (req,res)=>{
-        res.render('home.ejs')
+        res.render('main.ejs')
     },
 
     getAbout: (req,res) => {
@@ -8,6 +8,6 @@ module.exports = {
     },
 
     getuser: (req,res) => {
-        res.render('userHome.ejs')
+        res.render('home.ejs')
     }
 }

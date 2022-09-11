@@ -67,8 +67,10 @@ exports.postSignup = (req, res, next) => {
         return res.redirect('../signup')
     }
     req.body.email = validator.normalizeEmail(req.body.email, { gmail_remove_dots: false })
-
+    console.log(req.body)
     const user = new User({
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
         userName: req.body.userName,
         email: req.body.email,
         password: req.body.password
@@ -83,14 +85,16 @@ exports.postSignup = (req, res, next) => {
             req.flash('errors', { msg: 'Account with that email address or username already exists.' })
             return res.redirect('../signup')
         }
+
         user.save((err) => {
             if (err) { return next(err) }
-            req.logIn(user, (err) => {
-            if (err) {
-            return next(err)
-        }
-        res.redirect('/home')
-        })
-        })
+            return req.logIn(user, (err) => {
+              if (err) {
+                return next(err)
+              }
+              req.flash('success', { msg: 'Success! You are logged in.' })
+              return res.redirect('/home')
+            })
+          })
     })
 }
