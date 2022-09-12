@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/dbb8627868.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="container-fluid" style="background-color: #e9eef4;">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0"  style="background-color: #326789;">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="d-none d-sm-inline fw-semibold fs-3">The Daily Drill</span>
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item">
+                                <a href="/dashboard" class="nav-link align-middle px-0" style="color:#e9eef4; padding: 15px;">
+                                    <i class="fa-solid fa-house" style="color:#e9eef4;"></i>
+                                   <span class="ms-1 d-none d-sm-inline">
+                                    Home
+                                </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/routines" class="nav-link px-0 align-middle" style="padding: 15px;">
+                                    <i class="fa-solid fa-arrows-rotate" style="color:#e9eef4"></i>
+                                    <span class="ms-1 d-none d-sm-inline" style="color:#e9eef4">
+                                        Routines
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle" style="padding: 15px;">
+                                    <i class="fa-solid fa-list-check" style="color:#e9eef4;"></i>
+                                    <span class="ms-1 d-none d-sm-inline" style="color:#e9eef4;">
+                                        Tasks
+                                    </span>
+                                </a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li>
+                                        <a href="/tasks" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline" style="color:#e9eef4;">
+                                                <i class="fa-solid fa-chevron-right" style="padding-left: 20px; font-size: 0.8rem;"></i>
+                                                All
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tasks/priority" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline" style="color:#e9eef4;">
+                                                <i class="fa-solid fa-chevron-right" style="padding-left: 20px; font-size: 0.8rem;"></i>
+                                                Priority
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="w-100">
+                                        <a href="/tasks/daily" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline" style="color:#e9eef4;">
+                                                <i class="fa-solid fa-chevron-right" style="padding-left: 20px; font-size: 0.8rem;"></i>
+                                                Daily
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tasks/weekly" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline" style="color:#e9eef4">
+                                                <i class="fa-solid fa-chevron-right" style="padding-left: 20px; font-size: 0.8rem;"></i>
+                                                Weekly
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tasks/monthly" class="nav-link px-0">
+                                            <span class="d-none d-sm-inline" style="color:#e9eef4">
+                                                <i class="fa-solid fa-chevron-right" style="padding-left: 20px; font-size: 0.8rem;"></i>
+                                                Monthly
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/journal" class="nav-link px-0 align-middle" style="padding: 15px;">
+                                    <i class="fa-solid fa-pen-nib" style="color:#e9eef4;"></i>
+                                    <span class="ms-1 d-none d-sm-inline" style="color:#e9eef4">
+                                        Journal
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/calendar" class="nav-link px-0 align-middle" style="padding: 15px;">
+                                    <i class="fa-regular fa-calendar" style="color:#e9eef4;"></i>
+                                    <span class="ms-1 d-none d-sm-inline" style="color:#e9eef4">
+                                        Calendar
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="dropdown pb-4">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="#" alt="" width="30" height="30" class="rounded-circle">
+                                <span class="d-none d-sm-inline mx-1">User Name</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                                <li><a class="dropdown-item" href="/settings">Settings</a></li>
+                                <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/signout">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col py-3">
+                    <h3>Routines</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum molestiae optio possimus recusandae? Eos quam hic distinctio soluta voluptatibus? Placeat delectus ab expedita alias. Sapiente perspiciatis vitae voluptatum suscipit?</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
