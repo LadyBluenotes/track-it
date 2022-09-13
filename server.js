@@ -7,9 +7,17 @@ const MongoStore = require('connect-mongo')
 const flash = require('express-flash')
 const logger = require('morgan')
 const connectDB = require('./config/database')
-const mainRoutes = require('./routes/main')
+
+const calendarRoutes = require('./routes/calendar')
 const dashboardRoutes = require('./routes/dashboard')
+const journalRoutes = require('./routes/journal')
+const mainRoutes = require('./routes/main')
+const profileRoutes = require('./routes/profile')
 const routineRoutes = require('./routes/routines')
+const settingRoutes = require('./routes/settings')
+const tasksRoutes = require('./routes/tasks')
+
+
 
 
 require('dotenv').config({path: './config/.env'})
@@ -41,8 +49,13 @@ app.use(passport.session())
 app.use(flash())
   
 app.use('/', mainRoutes)
+app.use('/calendar', calendarRoutes)
 app.use('/dashboard', dashboardRoutes)
+app.use('/journal', journalRoutes)
+app.use('/profile', profileRoutes)
 app.use('/routines', routineRoutes)
+app.use('/settings', settingRoutes)
+app.use('/tasks', tasksRoutes)
  
 app.listen(process.env.PORT, ()=>{
     console.log(`Server is running`)
