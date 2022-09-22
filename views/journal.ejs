@@ -79,9 +79,53 @@
                 </div>
                 <!-- Content -->
                 <div class="col py-3">
-                    <h3>Journal</h3>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum molestiae optio possimus recusandae? Eos quam hic distinctio soluta voluptatibus? Placeat delectus ab expedita alias. Sapiente perspiciatis vitae voluptatum suscipit?</p>
+                    <section class="vh-100 gradient-custom-2">
+                        <div class="container py-5">
+                          <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-md-12 col-xl-10">
+                      
+                              <div class="card mask-custom">
+                                <div class="card-body p-4">
+                      
+                                  <div class="text-center pt-3 pb-2">
+                                    <!-- todo: add journal photo -->
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
+                                      alt="Check" width="60">
+                                    <h2 class="my-4">Journal</h2>
+                                  </div>
+
+                                  <div class="d-flex justify-content-right" style="padding: 10px">
+                                    <label for="dateOfEntry" class="form-label h6" style="padding-right: 20px;">Date:</label>
+                                    <input id="dateOfEntry" class="form-control" type="date" style="width: 150px;"/>
+                                  </div>
+                                  
+                                  <div class="d-flex justify-content-right" style="padding: 10px">
+                                    <label for="moodRange" class="form-label h6" style="padding-right: 20px;">Mood:</label>
+                                    <input type="range" class="form-range" id="moodRange" style="width: 50%;">
+                                  </div>
+
+                                  <div class="d-flex justify-content-right" style="padding: 10px">
+                                    <label for="wellEntry" class="form-label" style="width: 150px">What Went Well Today?</label>
+                                    <textarea class="form-control" id="wentWell"></textarea>
+                                  </div>
+
+                                  <div class="d-flex justify-content-right" style="padding: 10px">
+                                    <label for="improveEntry" class="form-label" style="width: 150px">What Can I Improve?</label>
+                                    <textarea class="form-control" id="improveEntry"></textarea>
+                                  </div>
+
+                                  <div class="d-flex justify-content-right" style="padding: 10px">
+                                    <label for="miscEntry" class="form-label" style="width: 150px">Anything Else?</label>
+                                    <textarea class="form-control" id="miscEntry"></textarea>
+                                  </div>
+                      
+                                </div>
+                              </div>
+                      
+                            </div>
+                          </div>
+                        </div>
+                      </section>
                 </div>
             </div>
         </div>
